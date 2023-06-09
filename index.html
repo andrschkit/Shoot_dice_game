@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Andrew ShCherbakov">
+   <meta name="description" content>
+   <link rel="stylesheet" href="style.css"/>
+   <title>Кости</title>
+</head>
+<body>
+  <main>
+  <button class="show_rules">&#9889;Правила</button>
+  <div class="modal_rules hidden">
+    <button class="close_modal_window">&times;</button>
+    <h1>Правила</h1>
+    <p>
+      Игра в кости. 
+      Игрок бросает кубик, если выпадает число от 2 до 6, то игрок записывает себе 
+      выпавшее количество очков и бросает кубик еще раз, либо моджет передать право хода второму игроку.
+      Если игроку выпадает 1, то очки, заработанные на этом ходу обнуляются и право хода также передается второму игроку
+      Побеждает игрок, который первым достигнет 100 очков.
+    </p>
+  </div>
+    <section class="player player_0 player_active">
+      <h2 class="name" id="name_0">Игрок 1</h2>
+      <p class="score" id="score_0">0</p>
+      <div class="current">
+        <p class="current_label">Текущие очки</p>
+        <p class="curren_score" id="current_0">0</p>
+      </div>
+    </section>
+    <section class="player player_1">
+      <h2 class="name" id="name_1">Игрок 1</h2>
+      <p class="score" id="score_1">0</p>
+      <div class="current">
+        <p class="current_label">Текущие очки</p>
+        <p class="curren_score" id="current_1">0</p>
+      </div>
+    </section>
+    <img src="img/dice1.png" alt="Dice" class="dice"/>
+    <button class="btn btn_new">&#127756; Новая игра</button>
+    <button class="btn btn_new">&#127922; Бросить кубик</button>
+    <button class="btn btn_hold">&#128274; Удержать</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
